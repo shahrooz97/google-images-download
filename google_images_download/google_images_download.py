@@ -387,7 +387,7 @@ class googleimagesdownload:
             time_range = ''
 
         if arguments['exact_size']:
-            size_array = arguments['exact_size']
+            size_array = arguments['exact_size'].copy
             exact_size = ",isz:ex,iszw:" + str(size_array[0]) + ",iszh:" + str(size_array[1])
         else:
             exact_size = ''
